@@ -7,3 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #create default user admin
 FactoryBot.create(:user,password: 'admin123', name: 'admin', email:'admin@admin.com.br' , admin: true)
+
+4.times do
+  FactoryBot.create(:offer)
+end
+
+4.times do
+  FactoryBot.create(:offer, premium: true)
+end
