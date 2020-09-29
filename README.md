@@ -1,24 +1,29 @@
-# README
+# CASHBACK TEST
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Um desafio bem interessante, um cadastro de ofertas bem simples e funcional.
 
-Things you may want to cover:
+####Heroku
+https://cash-back-lemoney.herokuapp.com/
+####Administração
+https://cash-back-lemoney.herokuapp.com/admin
 
-* Ruby version
+- email: admin@admin.com.br
+- senha: admin123
 
-* System dependencies
+###Instação
+Desconpactar o zip, adicionar a versão do ruby no seu Sistema Operacional (Exemplo: no Linux, o [RVM](https://https://rvm.io/) ) Ruby 2.6.6
+```sh
+$ bundle
+$ yarn install
+$ rake db:create db:migrate db:seed
+$ rails s
+```
 
-* Configuration
+####Dependências :
+* [RailsAdmin](https://github.com/sferik/rails_admin) foi utilizado para gerenciar o painel administrativo (/admin)
+* Devise
+* CanCanCan
+* SimpleCov
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+####Testes
+Relatório de cobertura no diretório /coverage em apenas 35.94%
