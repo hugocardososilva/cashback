@@ -1,0 +1,11 @@
+pt-BR:
+  admin:
+    actions:
+      disable_offer:
+        title: "Desabilitar"
+        menu: "Desabilitar"
+        breadcrumb: "Desabilitar"
+      enable_offer:
+        title: "Habilitar"
+        menu: "Habilitar"
+        breadcrumb: "Habilitar"

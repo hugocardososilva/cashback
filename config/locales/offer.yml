@@ -1,0 +1,16 @@
+pt-BR:
+  activerecord:
+    models:
+      offer:
+        one: "Oferta"
+        other: "Ofertas"
+
+    attributes:
+      offer:
+        advertiser_name: "Nome do anunciante"
+        Url: "Url"
+        status: "Situação"
+        description: "Descrição"
+        starts_at: "Inicia em"
+        end_at: "Termina em"
+        shop_now: "Compre já"

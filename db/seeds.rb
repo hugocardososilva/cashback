@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+#create default user admin
+FactoryBot.create(:user,password: 'admin123', name: 'admin', email:'admin@admin.com.br' , admin: true)
