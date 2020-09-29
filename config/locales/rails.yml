@@ -1,0 +1,260 @@
+pt-BR:
+  # formatos de data e hora
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d de %B"
+      long: "%d de %B de %Y"
+      report: "Aos %d do mês de %B do ano de %Y"
+      sefip: "%Y%m%d"
+      competence: "%m/%Y"
+
+    day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
+    abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+    abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
+    order:
+      - :day
+      - :month
+      - :year
+
+  time:
+    formats:
+      default: "%d/%m/%Y, %H:%M"
+      short: "%d/%m, %H:%M h"
+      datetime: "%d/%m/%Y, %H:%M"
+      medium: "%d/%m/%Y, %H:%M h"
+      long: "%A, %d de %B de %Y, %H:%M h"
+      hour: "%H:%M"
+      time: "%H:%M:%S"
+    am: ""
+    pm: ""
+
+  # distancia do tempo em palavras
+  datetime:
+    distance_in_words:
+      half_a_minute: "meio minuto"
+      less_than_x_seconds:
+        one: "menos de 1 segundo"
+        other: "menos de %{count} segundos"
+
+      x_seconds:
+        one: "1 segundo"
+        other: "%{count} segundos"
+
+      less_than_x_minutes:
+        one: "menos de um minuto"
+        other: "menos de %{count} minutos"
+
+      x_minutes:
+        one: "1 minuto"
+        other: "%{count} minutos"
+
+      about_x_hours:
+        one: "aproximadamente 1 hora"
+        other: "aproximadamente %{count} horas"
+
+      x_days:
+        one: "1 dia"
+        other: "%{count} dias"
+
+      about_x_months:
+        one: "aproximadamente 1 mês"
+        other: "aproximadamente %{count} meses"
+
+      x_months:
+        one: "1 mês"
+        other: "%{count} meses"
+
+      about_x_years:
+        one: "aproximadamente 1 ano"
+        other: "aproximadamente %{count} anos"
+
+      over_x_years:
+        one: "mais de 1 ano"
+        other: "mais de %{count} anos"
+
+      almost_x_years:
+        one: "quase 1 ano"
+        other: "quase %{count} anos"
+
+    prompts:
+      year:   "Ano"
+      month:  "Mês"
+      day:    "Dia"
+      hour:   "Hora"
+      minute: "Minuto"
+      second: "Segundo"
+
+  number:
+    format:
+      precision: 2
+      separator: ","
+      delimiter: "."
+      significant: false
+      strip_insignificant_zeros: false
+
+    currency:
+      format:
+        unit: "R$"
+        precision: 2
+        format: "%u %n"
+        separator: ","
+        delimiter: "."
+        significant: false
+        strip_insignificant_zeros: false
+
+    percentage:
+      format:
+        delimiter: "."
+
+    precision:
+      format:
+        delimiter: "."
+
+    human:
+      format:
+        precision: 2
+        delimiter: "."
+        significant: true
+        strip_insignificant_zeros: true
+
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      # number_to_human()
+      # new in rails 3: please add to other locales
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: "mil"
+          million:
+            one: milhão
+            other: milhões
+          billion:
+            one: bilhão
+            other: bilhões
+          trillion:
+            one: trilhão
+            other: trilhões
+          quadrillion:
+            one: quatrilhão
+            other: quatrilhões
+
+  # Usado no Array.to_sentence
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " e "
+      last_word_connector: " e "
+
+    select:
+      prompt: "Por favor selecione"
+
+  helpers:
+    select:
+      prompt: "Por favor selecione"
+
+    submit:
+      create: "Salvar"
+      update: "Salvar"
+      submit: "Salvar"
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    template:
+      header:
+        one: "Não foi possível gravar %{model}: 1 erro"
+        other: "Não foi possível gravar %{model}: %{count} erros."
+      body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+
+    messages: &errors_messages
+      already_write_off: 'já está baixado'
+      inclusion: "não está incluído na lista"
+      exclusion: "não está disponível"
+      invalid: "não é válido"
+      confirmation: "não está de acordo com a confirmação"
+      accepted: "deve ser aceito"
+      empty: "não pode ficar vazio"
+      blank: "não pode ficar em branco"
+      cannot_be_filled: "não pode ser preenchido"
+      too_long: "é muito longo (máximo: %{count} caracteres)"
+      too_short: "é muito curto (mínimo: %{count} caracteres)"
+      wrong_length: "não possui o tamanho esperado (%{count} caracteres)"
+      not_a_number: "não é um número"
+      not_an_integer: "não é um número inteiro"
+      not_write_off: "não está baixado"
+      greater_than: "deve ser maior que %{count}"
+      greater_than_or_equal_to: "deve ser maior ou igual a %{count}"
+      equal_to: "deve ser igual a %{count}"
+      less_than: "deve ser menor que %{count}"
+      less_than_or_equal_to: "deve ser menor ou igual a %{count}"
+      odd: "deve ser ímpar"
+      even: "deve ser par"
+      is_blocked: 'Almoxarifado em inventário - alteração não permitida'
+      presence_at_least_one: "um dos campos precisa ser preenchido" # for presence_at_least_one validator
+      presence_maximum_one: "apenas um dos campos pode ser preenchido" # for presence_maximum_one validator
+      individual_required: "não pode ser empresa"
+      company_required: "não pode ser pessoa física"
+      read_only_cannot_be_required: "não pode ser obrigatório se for somente leitura."
+      should_not_be_less_than_start_date: "não deve ser antes da data de inicio"
+      must_have_at_least_one_hierarchical_level: 'deve cadastrar pelo menos um nível hierárquico'
+      must_have_at_least_one_item: 'deve cadastrar pelo menos um item'
+      sequence_doesnt_exist_for_current_year: 'não existe sequência cadastrada para o ano atual.'
+      total_values_doesnt_coincide: 'valor total da nota não coincide com a somatória dos itens'
+      doesnt_have_material_control_information: 'material(%{material}) não possui informação de controle disponível no almoxarifado selecionado'
+      real_balance_isnt_zero: 'o saldo em estoque não é zero'
+      cannot_be_changed: 'não pode ser alterado'
+      material_with_batch_control_must_be_unique: 'O material deve ser único por localização, lote e validade (%{material})'
+      material_without_batch_control_must_be_unique: 'O material deve ser único por localização (%{material})'
+      material_already_used_another_inventory: '%{material} - já foi utilizado em outra implantação de saldo para este almoxarifado'
+      cannot_have_representative_equal_creditor: "não pode haver um representante igual ao credor"
+      cannot_have_secondary_cnae_equal_main_cnae: "não pode haver um CNAE secundário igual ao CNAE principal"
+      should_be_on_or_before_today: "deve ser igual ou anterior a data atual (%{restriction})"
+      validity_should_be_on_or_after_emission_date: "deve ser igual ou posterior a data de emissão (%{restriction})"
+      material_should_be_uniq: "O material deve ser único"
+      requested_quantity_less_than_delivered: "A quantidade requisitada é menor que a entregue"
+      destiny_quantity_not_equal_source: "A quantidade de destino está diferente da quantidade de origem"
+      source_and_destiny_must_be_filled: "Origem e destino devem ser preenchidos"
+      at_least_one_item_must_be_selected: "Pelo menos 1 item deve ser selecionado"
+      all_items_out_of_stock: "Todos os itens estão em falta no almoxarifado"
+      some_items_out_of_stock: "Existem alguns itens em falta no almoxarifado"
+      cannot_be_reversed: "Não pode ser estornado"
+      cannot_be_changed_when_has_materials: "não pode ser alterado quando houver materiais vinculados à classe"
+      materials_class_with_material_cannot_has_children: "classe com materiais associados não podem ser base para outras classes"
+      invalid_inventory_warehouse_data: "Os dados informados nos itens do ajuste de material não estão corretos."
+      material_with_batch_already_exist: 'O material deve ser único por lote'
+      validate_multiple_number_by_creditor: "Já existe um registro de nota com o número %{number} para o fornecedor %{creditor_name}"
+      quantity_must_be_greater_than_zero: 'Quantidade deve ser maior do que zero'
+      negative_balance_error: "Estorno não realizado, há materiais que ficarão com saldo negativo."
+      material_control_has_movement: 'Material não pode ser apagado, existem movimentos no almoxarifado'
+
+  confirm:
+    messages:
+      reverse_message: "Essa operação não pode ser desfeita, deseja continuar?"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one: "Não foi possível gravar %{model}: 1 erro"
+          other: "Não foi possível gravar %{model}: %{count} erros."
+        body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+
+      messages:
+        taken: "já está em uso"
+        record_invalid: "A validação falhou: %{errors}"
+        cant_be_destroyed: "devem ser apagados(as) manualmente"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute}%{message}"
