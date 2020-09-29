@@ -14,17 +14,17 @@ RSpec.describe User, type: :model do
     end
    it "has a unique email" do
      some_user = build(:user, email: @user.email)
-      expect(user2).to_not be_valid
+      expect(some_user).to_not be_valid
     end
 
     it "is not valid without a password" do
       some_user = build(:user, password: nil)
-      expect(user2).to_not be_valid
+      expect(some_user).to_not be_valid
     end
 
     it "is not valid without an email" do
       some_user = build(:user, email: nil)
-      expect(user2).to_not be_valid
+      expect(some_user).to_not be_valid
     end
 
   end
