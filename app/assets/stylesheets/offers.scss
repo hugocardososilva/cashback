@@ -1,3 +1,14 @@
 // Place all the styles related to the offers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.offer-card{
+  max-width: 350px;
+  height: 250px;
+}
+.card-deck .card {
+  min-width: 300px;
+
+}
+.card{
+  margin-bottom:20px!important;
+}
