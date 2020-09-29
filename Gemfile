@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 #auth gem dependencies
 gem 'devise'
+gem 'devise-bootstrapped'
 
 gem 'cancancan'
 
@@ -39,6 +40,12 @@ gem 'rails-ujs'
 
 #easy validation uri
 gem "validate_url"
+
+#decorator
+gem 'draper'
+
+gem 'rails_admin'
+gem 'rails_admin-i18n'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
